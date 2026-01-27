@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+    background: #333;
+    padding: 12px 20px;
+}
+
+/* Layout */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    block-size: 45px;
+    inline-size: auto;
+}
+
+
+/* Nav list */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Search input */
+.search-box input {
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    inline-size: 220px;
+}
+
+/* Header */
+header {
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+                no-repeat center/cover;
+    block-size: 90vh;
+    color: white;
+    text-align: center;
+    position: relative; /* IMPORTANT for sidebar */
+    padding-inline-start: 220px; /* sidebar space */
+}
+
+header h1 {
+    padding-block-start: 200px;
+    font-size: 50px;
+}
+
+header p {
+    font-size: 20px;
+    margin-block-start: 10px;
+}
+
+header a {
+    display: inline-block;
+    margin-block-start: 20px;
+    padding: 12px 25px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background: darkorange;
+}
+
+/* SIDEBAR */
+aside {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 220px;
+    block-size: 100%;
+    background: #0d6efd; /* BLUE sidebar */
+    padding: 20px;
+}
+
+aside h3 {
+    color: white;
+    margin-block-end: 15px;
+}
+
+/* Sidebar list */
+.sidebar {
+    list-style: none;
+}
+
+.sidebar li {
+    color: white;
+    padding: 12px;
+    border-block-end: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Section */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h2 {
+    margin-block-end: 30px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    inline-size: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    inline-size: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
