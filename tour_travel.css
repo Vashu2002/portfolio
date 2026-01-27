@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ header {
     block-size: 90vh;
     color: white;
     text-align: center;
-    position: relative; /* IMPORTANT for sidebar */
+    position: relative; 
     padding-inline-start: 220px; /* sidebar space */
 }
 
